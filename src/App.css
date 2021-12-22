@@ -6,4 +6,45 @@
 
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid rgb(103, 103, 238);
+  border-radius: 25px;
+  width: 400px;
+  padding: 25px;
+  margin: 50px auto;
+  color: rgb(103, 103, 238);
+  background: rgb(245, 247, 246);
+}
+
+.create-account {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+
+}
+
+.input {
+  padding: 5px;
+  margin: 5px;
+
+}
+
+button {
+  width: 40%;
+  height: 50px;
+  margin: 0 auto;
+  background: rgb(103, 103, 238);
+  color: white;
+  font-size: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+
 }

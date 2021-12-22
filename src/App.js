@@ -22,17 +22,15 @@ function App() {
   return (
     <div className="App">
       <div className="create-account">
-        <h1>Create an Account</h1>
-        <label>Username</label>
-        <input type="text" onChange={(e) => {setUsername(e.target.value)}}/>
-        <label>Password</label>
-        <input type="text" onChange={(e) => {setPassword(e.target.value)}}/>
+        <h1>Create Account</h1>
+        <input type="text" className="input" placeholder="Username..." onChange={(e) => {setUsername(e.target.value)}}/>
+        <input type="text" className="input" placeholder="Password..." onChange={(e) => {setPassword(e.target.value)}}/>
         <button onClick={register}>Create Account</button>
       </div>
       <div className="login">
         <h1>Login</h1>
-        <input type="text" placeholder="Username..." />
-        <input type="password" placeholder="Password..." />
+        <input type="text" className="input" placeholder="Username..." />
+        <input type="password" className="input" placeholder="Password..." />
         <button>Login</button>
       </div>
     </div>
