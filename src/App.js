@@ -39,21 +39,21 @@ function App() {
   // returning the table jsx code
   return (
     <div className="App">
-      <div className="create-account">
-        <h1>Create Account</h1>
-        <input type="text" className="input" placeholder="Username..." onChange={(e) => {setUsernameValue(e.target.value)}}/>
-        <input type="text" className="input" placeholder="Password..." onChange={(e) => {setPasswordValue(e.target.value)}}/>
-        <button onClick={register}>Create Account</button>
+      <div className="login-container">
+        <div className="create-account">
+          <h1>Create Account</h1>
+          <input type="text" className="input" placeholder="Username..." onChange={(e) => {setUsernameValue(e.target.value)}}/>
+          <input type="text" className="input" placeholder="Password..." onChange={(e) => {setPasswordValue(e.target.value)}}/>
+          <button onClick={register}>Create Account</button>
+        </div>
+        <div className="login">
+          <h1>Login</h1>
+          <input type="text" className="input" placeholder="Username..." onChange={(e) => {setUsername(e.target.value)}}/>
+          <input type="text" className="input" placeholder="Password..." onChange={(e) => {setPassword(e.target.value)}}/>
+          <button onClick={login}>Login</button>
+        </div>
+        <h1>{loginStatus}</h1>
       </div>
-      <div className="login">
-        <h1>Login</h1>
-        <input type="text" className="input" placeholder="Username..." onChange={(e) => {setUsername(e.target.value)}}/>
-        <input type="text" className="input" placeholder="Password..." onChange={(e) => {setPassword(e.target.value)}}/>
-        <button onClick={login}>Create Account</button>
-
-      </div>
-
-      <h1>{loginStatus}</h1>
     </div>
   );
 }
